@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta Access-Control-Allow-Origin: *>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header">
+    <h1>Página Cliente</h1>
+</div>
+
+<div id="container">
+    <p>Ingrese su nombre y edad:</p>
+    <form id="myForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+        <p id="error"></p>
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="button" id="borrar">Borrar</button>
+    </form>
+</div>
+
+<div id="contenido"></div>
+
+<div id="footer">
+    <p>&copy; 2024 Alfonso Mantas</p>
+</div>
+
+<button type="button" id="cambiarColorBtn">Cambiar Color del Contenedor</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
